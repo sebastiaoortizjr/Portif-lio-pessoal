@@ -1,0 +1,155 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ===== CABEÇALHO ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 3px solid #000000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 5px 12px;
+}
+
+.nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== QUADRADOS (base de tudo) ===== */
+.quadrado {
+    border: 3px solid #000000;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 60px 40px;
+}
+
+.quadrado-grande {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 60px 30px;
+}
+
+.quadrado-grande h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.quadrado-grande p {
+    font-size: 18px;
+}
+
+/* ===== SEÇÕES GERAIS ===== */
+.secao {
+    padding: 50px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.secao h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ===== GRID DE SKILLS ===== */
+.grid-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* ===== GRID DE PROJETOS ===== */
+.grid-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.projeto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.projeto h3 {
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    margin-bottom: 15px;
+}
+
+.projeto a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ===== RODAPÉ ===== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #000000;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVIDADE BÁSICA ===== */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav a {
+        margin: 0 10px;
+    }
+
+    .grid-skills, .grid-projetos {
+        flex-direction: column;
+    }
+}
