@@ -1,34 +1,40 @@
+:root{
+--cor-primaria:  #181E4C;
+--cor-texto: #b8860b;
+}
 /* ===== RESET BÁSICO ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+ #github-icon{
+    filter: invert(1);
+ }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color:var(--cor-primaria);
+    color:var(--cor-texto);
 }
 
 /* ===== CABEÇALHO ===== */
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid var(--cor-texto);
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    border: 2px solid #000000;
+    border: 2px solid var(--cor-texto);
     padding: 5px 12px;
 }
 
 .nav a {
-    color: #000000;
+    color: var(--cor-texto);
     text-decoration: none;
     margin-left: 25px;
     font-weight: bold;
@@ -40,9 +46,10 @@ body {
 
 /* ===== QUADRADOS (base de tudo) ===== */
 .quadrado {
-    border: 3px solid #000000;
+    border: 3px solid var(--cor-texto);
     padding: 30px;
-    background-color: #ffffff;
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
 }
 
 /* ===== HERO ===== */
@@ -78,7 +85,7 @@ body {
 .secao h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid var(--cor-texto);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -125,7 +132,7 @@ body {
 }
 
 .projeto a {
-    color: #000000;
+    color:var(--cor-primaria);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -134,7 +141,7 @@ body {
 .footer {
     text-align: center;
     padding: 20px;
-    border-top: 3px solid #000000;
+    border-top: 3px solid var(--cor-texto);
     margin-top: 40px;
 }
 
