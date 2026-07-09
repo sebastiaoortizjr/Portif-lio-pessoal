@@ -16,8 +16,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color:var(--cor-primaria);
     color:var(--cor-texto);
-    background-image: url(fundo-nome.jpg);
-    background-size: cover;
+    background-image: url(fundo-pagina.jpg);
+    background-size:cover;
 }
 
 /* ===== CABEÇALHO ===== */
@@ -59,9 +59,9 @@ body {
 .hero {
     display: flex;
     justify-content: center;
-    padding: 60px 40px;
+    padding: 60px 20px;
     position: relative;
-    
+    width: 100%;
     
 }
 .hero-img{
