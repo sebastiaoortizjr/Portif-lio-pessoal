@@ -41,6 +41,7 @@ body {
     text-decoration: none;
     margin-left: 25px;
     font-weight: bold;
+ 
 }
 
 .nav a:hover {
@@ -124,6 +125,12 @@ z-index: 0;
     flex: 1;
     min-width: 140px;
     text-align: center;
+    transform: 0.3s;
+}
+
+.skill:hover{
+   transform: scale(1.3);
+   transition: 0.5s;
 }
 
 .skill img {
