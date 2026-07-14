@@ -20,7 +20,6 @@ body {
     background-size:cover;
 }
 
-/* ===== CABEÇALHO ===== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -48,7 +47,6 @@ body {
     text-decoration: underline;
 }
 
-/* ===== QUADRADOS (base de tudo) ===== */
 .quadrado {
     border: 1px solid var(--cor-texto);
     padding: 30px;
@@ -62,7 +60,7 @@ transform: scale(1.1);
 transition: 0.5s;
 
 }
-/* ===== HERO ===== */
+
 .hero {
     display: flex;
     justify-content: center;
@@ -104,7 +102,6 @@ z-index: 0;
     z-index: 1;
 }
 
-/* ===== SEÇÕES GERAIS ===== */
 .secao {
     padding: 50px 40px;
     max-width: 900px;
@@ -119,7 +116,6 @@ z-index: 0;
     padding-bottom: 5px;
 }
 
-/* ===== GRID DE SKILLS ===== */
 .grid-skills {
     display: flex;
     flex-wrap: wrap;
@@ -148,7 +144,6 @@ z-index: 0;
     margin-bottom: 10px;
 }
 
-/* ===== GRID DE PROJETOS ===== */
 .grid-projetos {
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +170,6 @@ z-index: 0;
     text-decoration: underline;
 }
 
-/* ===== RODAPÉ ===== */
 .footer {
     text-align: center;
     padding: 20px;
@@ -183,7 +177,6 @@ z-index: 0;
     margin-top: 40px;
 }
 
-/* ===== RESPONSIVIDADE BÁSICA ===== */
 @media (max-width: 600px) {
     .header {
         flex-direction: column;
