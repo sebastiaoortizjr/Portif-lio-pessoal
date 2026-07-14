@@ -2,7 +2,7 @@
 --cor-primaria:  #181E4C;
 --cor-texto: #b8860b;
 }
-/* ===== RESET BÁSICO ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -50,12 +50,18 @@ body {
 
 /* ===== QUADRADOS (base de tudo) ===== */
 .quadrado {
-    border: 3px solid var(--cor-texto);
+    border: 1px solid var(--cor-texto);
     padding: 30px;
-    background-color: var(--cor-primaria);
-   
+    background:transparent;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
+.quadrado:hover{
+transform: scale(1.1);
+transition: 0.5s;
+
+}
 /* ===== HERO ===== */
 .hero {
     display: flex;
@@ -122,6 +128,9 @@ z-index: 0;
 }
 
 .skill {
+    border: 1px solid var(--cor-texto);
+    border-radius: 6px;
+    background:transparent;
     flex: 1;
     min-width: 140px;
     text-align: center;
